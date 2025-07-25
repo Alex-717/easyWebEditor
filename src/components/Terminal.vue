@@ -385,7 +385,6 @@ const executeNodeCommand = async (command) => {
     addOutputLine('用法: node <filename> [args...]', 'error')
     return
   }
-
   // 检查是否有打开的项目
   if (!editorStore.rootDirectory) {
     addOutputLine('❌ 请先打开一个项目文件夹', 'error')
